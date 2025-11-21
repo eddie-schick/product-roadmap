@@ -1,0 +1,35 @@
+-- WARNING: This schema is for context only and is not meant to be run.
+-- Table order and constraints may not be valid for execution.
+
+CREATE TABLE public.roadmap_fields (
+  ID bigint NOT NULL,
+  Product text,
+  Status text,
+  Initiative text,
+  Objective text,
+  Deliverables text,
+  Measure of Success / Outcomes text,
+  User Impact / Effort text,
+  Priority text,
+  Start Date date,
+  End Date date,
+  Quarter Due text,
+  Production Live Date text,
+  Product Dev Status text,
+  Notes text,
+  sort_order integer DEFAULT 0,
+  priority_rank integer,
+  requested_by text,
+  engineer_assigned text,
+  est_hours_story_points numeric,
+  dependencies text,
+  tags_labels text,
+  epic_theme text,
+  business_value_roi text,
+  risk_level text,
+  external_links text,
+  actual_completion_date date,
+  customer_impact text,
+  team text,
+  CONSTRAINT roadmap_fields_pkey PRIMARY KEY (ID)
+);
